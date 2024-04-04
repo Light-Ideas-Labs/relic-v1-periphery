@@ -1,0 +1,60 @@
+{
+	"compiler": {
+		"version": "0.6.6+commit.6c089d02"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "getExchange",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"methods": {}
+		},
+		"userdoc": {
+			"methods": {}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"v2-periphery/contracts/interfaces/V1/IRelicswapV1Factory.sol": "IswapV1Factory"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"v2-periphery/contracts/interfaces/V1/IRelicswapV1Factory.sol": {
+			"keccak256": "0x9b998687c2d453ee7e1c6cdd9c976a0e0dff91375322b43fe4ac7ace898451b5",
+			"urls": [
+				"bzz-raw://2599538d9982ee121f4d79f5fe2cf256be6d15ebae38c029055e5bd7c526abd0",
+				"dweb:/ipfs/QmY7dEfrfs2vFax5NxoeiHeLLUSSDti8ELjhRAVo99A99r"
+			]
+		}
+	},
+	"version": 1
+}

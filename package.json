@@ -27,6 +27,8 @@
   },
   "dependencies": {
     "@nomicfoundation/hardhat-ignition": "^0.15.0",
-    "@nomicfoundation/ignition-core": "^0.15.0"
+    "@nomicfoundation/ignition-core": "^0.15.0",
+    "@uniswap/lib": "^4.0.1-alpha",
+    "@uniswap/v2-core": "^1.0.1"
   }
 }

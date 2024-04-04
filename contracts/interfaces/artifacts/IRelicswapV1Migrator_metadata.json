@@ -1,0 +1,74 @@
+{
+	"compiler": {
+		"version": "0.6.6+commit.6c089d02"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "token",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "amountTokenMin",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "amountETHMin",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address",
+						"name": "to",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "deadline",
+						"type": "uint256"
+					}
+				],
+				"name": "migrate",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"methods": {}
+		},
+		"userdoc": {
+			"methods": {}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"v2-periphery/contracts/interfaces/IUniswapV2Migrator.sol": "IRelicswapV1Migrator"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"v2-periphery/contracts/interfaces/IUniswapV2Migrator.sol": {
+			"keccak256": "0xd0b78251a4b9d3258e4a89198b0c4a68e40727afe07f0bfac51ba903517d96e1",
+			"urls": [
+				"bzz-raw://0b944d1573ecf73b45c8773e3c7680ca5f63a1926a0feb25411c940a7a90759b",
+				"dweb:/ipfs/QmYXEPuDQhGjkhUpRWSLA25TES22fQQCbKGSQo7PPUWMVw"
+			]
+		}
+	},
+	"version": 1
+}
