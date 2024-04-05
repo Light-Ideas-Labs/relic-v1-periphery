@@ -1,0 +1,277 @@
+{
+	"compiler": {
+		"version": "0.6.6+commit.6c089d02"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "factory_",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "windowSize_",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint8",
+						"name": "granularity_",
+						"type": "uint8"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "tokenIn",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "amountIn",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address",
+						"name": "tokenOut",
+						"type": "address"
+					}
+				],
+				"name": "consult",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "amountOut",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "factory",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "granularity",
+				"outputs": [
+					{
+						"internalType": "uint8",
+						"name": "",
+						"type": "uint8"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "timestamp",
+						"type": "uint256"
+					}
+				],
+				"name": "observationIndexOf",
+				"outputs": [
+					{
+						"internalType": "uint8",
+						"name": "index",
+						"type": "uint8"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "pairObservations",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "timestamp",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "price0Cumulative",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "price1Cumulative",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "periodSize",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "tokenA",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "tokenB",
+						"type": "address"
+					}
+				],
+				"name": "update",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "windowSize",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"methods": {}
+		},
+		"userdoc": {
+			"methods": {}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/examples/ExampleSlidingWindowOracle.sol": "ExampleSlidingWindowOracle"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": true,
+			"runs": 800
+		},
+		"remappings": []
+	},
+	"sources": {
+		"@uniswap/lib/contracts/libraries/Babylonian.sol": {
+			"keccak256": "0xeb1c2a281a00f4660775f75ccfa1e51fbe1d75f86aeb9d0d297151ecdb900177",
+			"urls": [
+				"bzz-raw://68515f0265381bddfb1d1356ea10ce4e5784276fc09f197fcdcedfa5c75cc069",
+				"dweb:/ipfs/QmXWVVPnuJwRUAu3Qpu1s7Fyc5WPQxmZPczVEe5cJ5wVHZ"
+			]
+		},
+		"@uniswap/lib/contracts/libraries/BitMath.sol": {
+			"keccak256": "0x19f84d5268286794b44939ec0d85b3c6f59e133f826cdbd9e40112fc94919bb7",
+			"urls": [
+				"bzz-raw://d21c67ed58cf667d052e141df2fba76c46c159edcc45eb897c908c20c69d2727",
+				"dweb:/ipfs/QmUyKz1992wgR8nYAzBuQzjBAKMxLAN3hTgzpYJxusbmVH"
+			]
+		},
+		"@uniswap/lib/contracts/libraries/FixedPoint.sol": {
+			"keccak256": "0xc3a39b8a11715cea45ad9f67f50e4e4c33778c1124acd59e90daf064c9a93974",
+			"urls": [
+				"bzz-raw://2c6c3cdcdb30caa5d15477550003b5dbb174cb2c0be3c012af030fce3d043f28",
+				"dweb:/ipfs/QmWh3n5g6zq3umJcURnKCFhhif2c8yb6mKczFjfoCNLC3g"
+			]
+		},
+		"@uniswap/lib/contracts/libraries/FullMath.sol": {
+			"keccak256": "0xc4ffcf28169f73fc9fdd1f82345d6d4fcccf3fd5aea83c133437c25e4e0950a9",
+			"urls": [
+				"bzz-raw://c9257a47501005f0a648bc4801ef4abc33843681aaf03a6d0c43d46b69e37407",
+				"dweb:/ipfs/QmciHvDrqhxs5fjsrm9aNq29FZXpunMn17n2wWj83Zsh3B"
+			]
+		},
+		"@uniswap/v2-core/contracts/interfaces/IUniswapV2Factory.sol": {
+			"keccak256": "0xe5905c0989cf5a865ed9bb7b9252536ca011c5b744017a82a7d4443b9c00a891",
+			"urls": [
+				"bzz-raw://5d2a90a0a796491507462a3da18c3f8819721d571572d765a2207c35bf0a0389",
+				"dweb:/ipfs/Qmf9ACYiT3qzjgsYuhm866FBdiBpRMXAPpQhSFbgqcyhHt"
+			]
+		},
+		"@uniswap/v2-core/contracts/interfaces/IUniswapV2Pair.sol": {
+			"keccak256": "0x7c9bc70e5996c763e02ff38905282bc24fb242b0ef2519a003b36824fc524a4b",
+			"urls": [
+				"bzz-raw://85d5ad2dd23ee127f40907a12865a1e8cb5828814f6f2480285e1827dd72dedf",
+				"dweb:/ipfs/QmayKQWJgWmr46DqWseADyUanmqxh662hPNdAkdHRjiQQH"
+			]
+		},
+		"contracts/examples/ExampleSlidingWindowOracle.sol": {
+			"keccak256": "0x59a0702db89f30b17232aeaf9727048aa02f1a2120968f0ee134fe283a29b6b3",
+			"urls": [
+				"bzz-raw://2bebb87d9a2dc219c553bd392c15fd0e7e1049dee5c33aed66c6222662719283",
+				"dweb:/ipfs/QmYzbEFf1zjbkvkfGnFJXjirhyHfGnKYvPj4roKpQpf1kM"
+			]
+		},
+		"contracts/libraries/RelicswapV1Library.sol": {
+			"keccak256": "0x0d8f2740d53779bd16c4e42bcb3721a2ab1f4234c6ca82f1dae7a016dec1a605",
+			"urls": [
+				"bzz-raw://fd14ee349c2e5c371d367c215a29153bb5b1ae671ae7251c9811db0336d32758",
+				"dweb:/ipfs/QmSXErJkk7XmZpCNc2LYvTHtM2xL7eSdkoPzaFjjBp22YA"
+			]
+		},
+		"contracts/libraries/RelicswapV1OracleLibrary.sol": {
+			"keccak256": "0x993538630a9568290c39140d54c034a66cf1b95cdeef4ba804a948c4ee2fc311",
+			"urls": [
+				"bzz-raw://adff017b539750d5ac84403360967c4d6b02a1ee9b8f2487f0bcddd7fa7c523e",
+				"dweb:/ipfs/QmQqUiUvoezf33f2SZa64M8KgksHSXFPrGuwDvxijtXYMo"
+			]
+		},
+		"contracts/libraries/SafeMath.sol": {
+			"keccak256": "0x27f0ea82f879b3b01387b583e6d9d0ec858dca3b22b0aad173f8fbda06e761e1",
+			"urls": [
+				"bzz-raw://0db9cf37793eb7035f0bfced36323d240f0212150009c39a3a108701d9b50b6c",
+				"dweb:/ipfs/QmUAdiG9XNcieXkKfiMB49zQqD34FbXFE15csV2KQzwEqg"
+			]
+		}
+	},
+	"version": 1
+}

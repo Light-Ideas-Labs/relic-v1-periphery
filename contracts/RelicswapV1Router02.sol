@@ -9,7 +9,7 @@ import './libraries/SafeMath.sol';
 import './interfaces/IERC20.sol';
 import './interfaces/IWETH.sol';
 
-contract UniswapV2Router02 is IRelicswapV1Router02 {
+contract RelicswapV1Router02 is IRelicswapV1Router02 {
     using SafeMath for uint;
 
     address public immutable override factory;
@@ -411,6 +411,27 @@ contract UniswapV2Router02 is IRelicswapV1Router02 {
         override
         returns (uint amountOut)
     {
+        return RelicswapV1Library.getAmountOut(amountIn, reserveIn, reserveOut);
+    }
+
+    function getAmountIn(uint amountOut, uint reserveIn, uint reserveOut)
+        public
+        pure
+        virtual
+        override
+        returns (uint amountIn)
+    {
+        return RelicswapV1Library.getAmountIn(amountOut, reserveIn, reserveOut);
+    }
+
+    function getAmountsOut(uint amountIn, address[] memory path)
+        public
+        view
+        virtual
+        override
+        returns (uint[] memory amounts)
+    {
+        return RelicswapV1Library.getAmountsOut(factory, amountIn, path);
     }
 
     function getAmountsIn(uint amountOut, address[] memory path)

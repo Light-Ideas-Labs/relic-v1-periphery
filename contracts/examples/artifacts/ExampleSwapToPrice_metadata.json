@@ -1,0 +1,201 @@
+{
+	"compiler": {
+		"version": "0.6.6+commit.6c089d02"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "factory_",
+						"type": "address"
+					},
+					{
+						"internalType": "contract IRelicswapV1Router01",
+						"name": "router_",
+						"type": "address"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [],
+				"name": "factory",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "router",
+				"outputs": [
+					{
+						"internalType": "contract IRelicswapV1Router01",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "tokenA",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "tokenB",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "truePriceTokenA",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "truePriceTokenB",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "maxSpendTokenA",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "maxSpendTokenB",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address",
+						"name": "to",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "deadline",
+						"type": "uint256"
+					}
+				],
+				"name": "swapToPrice",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"methods": {}
+		},
+		"userdoc": {
+			"methods": {}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/examples/ExampleSwapToPrice.sol": "ExampleSwapToPrice"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": true,
+			"runs": 800
+		},
+		"remappings": []
+	},
+	"sources": {
+		"@uniswap/lib/contracts/libraries/Babylonian.sol": {
+			"keccak256": "0xeb1c2a281a00f4660775f75ccfa1e51fbe1d75f86aeb9d0d297151ecdb900177",
+			"urls": [
+				"bzz-raw://68515f0265381bddfb1d1356ea10ce4e5784276fc09f197fcdcedfa5c75cc069",
+				"dweb:/ipfs/QmXWVVPnuJwRUAu3Qpu1s7Fyc5WPQxmZPczVEe5cJ5wVHZ"
+			]
+		},
+		"@uniswap/lib/contracts/libraries/FullMath.sol": {
+			"keccak256": "0xc4ffcf28169f73fc9fdd1f82345d6d4fcccf3fd5aea83c133437c25e4e0950a9",
+			"urls": [
+				"bzz-raw://c9257a47501005f0a648bc4801ef4abc33843681aaf03a6d0c43d46b69e37407",
+				"dweb:/ipfs/QmciHvDrqhxs5fjsrm9aNq29FZXpunMn17n2wWj83Zsh3B"
+			]
+		},
+		"@uniswap/lib/contracts/libraries/TransferHelper.sol": {
+			"keccak256": "0xaff99b54915f57e2a4e71b8d15afd4ee425410e5a6f45c07517ae1beb806f8bd",
+			"urls": [
+				"bzz-raw://15432ec031f4cfa6709921289e198b030a0c5eac75b5a3e0eb64827a2b3b5595",
+				"dweb:/ipfs/QmZvR1KuuDvuzXFiADCngTKyMCTy31uhq9U6CazP59B55j"
+			]
+		},
+		"@uniswap/v2-core/contracts/interfaces/IUniswapV2Factory.sol": {
+			"keccak256": "0xe5905c0989cf5a865ed9bb7b9252536ca011c5b744017a82a7d4443b9c00a891",
+			"urls": [
+				"bzz-raw://5d2a90a0a796491507462a3da18c3f8819721d571572d765a2207c35bf0a0389",
+				"dweb:/ipfs/Qmf9ACYiT3qzjgsYuhm866FBdiBpRMXAPpQhSFbgqcyhHt"
+			]
+		},
+		"@uniswap/v2-core/contracts/interfaces/IUniswapV2Pair.sol": {
+			"keccak256": "0x7c9bc70e5996c763e02ff38905282bc24fb242b0ef2519a003b36824fc524a4b",
+			"urls": [
+				"bzz-raw://85d5ad2dd23ee127f40907a12865a1e8cb5828814f6f2480285e1827dd72dedf",
+				"dweb:/ipfs/QmayKQWJgWmr46DqWseADyUanmqxh662hPNdAkdHRjiQQH"
+			]
+		},
+		"contracts/examples/ExampleSwapToPrice.sol": {
+			"keccak256": "0x959594a85399dce25d197827bc98bd19902ec04a949ec00e4d12a105fa05e2b9",
+			"urls": [
+				"bzz-raw://834d9a5b558674998e190d0ab5ca965644a973d436bcdb5977bc8e804a000564",
+				"dweb:/ipfs/QmfEKEECViTr7njZ6eCjntwAoUcyNJb6Yx7bo3xpFK4vU9"
+			]
+		},
+		"contracts/interfaces/IERC20.sol": {
+			"keccak256": "0x61db17aebc5d812c7002d15c1da954065e56abe49d64b14c034abe5604d70eb3",
+			"urls": [
+				"bzz-raw://b006685e753f9120469f10b09c159f222d4cb8b507a6c1f0c14ed50c883ebe66",
+				"dweb:/ipfs/QmSyY7iTugbczPwfGK67etiyPULenYGzzRYbt8aabwwkUb"
+			]
+		},
+		"contracts/interfaces/IRelicswapV1Router01.sol": {
+			"keccak256": "0xa94e223097a6634bfd5f1d597633e7ad49a4ad648103955ea31b61409819a379",
+			"urls": [
+				"bzz-raw://0f14125fc7dc941462b1af8296406e6c96fa038d372a55a7186afcc22fbc46e6",
+				"dweb:/ipfs/QmYvGYLfexpJsCyapXnsSnwsudvNHC3mKeGsgSTrcmDY9c"
+			]
+		},
+		"contracts/libraries/RelicswapV1Library.sol": {
+			"keccak256": "0x0d8f2740d53779bd16c4e42bcb3721a2ab1f4234c6ca82f1dae7a016dec1a605",
+			"urls": [
+				"bzz-raw://fd14ee349c2e5c371d367c215a29153bb5b1ae671ae7251c9811db0336d32758",
+				"dweb:/ipfs/QmSXErJkk7XmZpCNc2LYvTHtM2xL7eSdkoPzaFjjBp22YA"
+			]
+		},
+		"contracts/libraries/RelicswapV1LiquidityMathLibrary.sol": {
+			"keccak256": "0x62c715d45533ba99c811a93dc92bf39c7bd9dc473981b677674ecc92d5401d79",
+			"urls": [
+				"bzz-raw://29fc1845a2f8cac54b879f6a9b1d38ea4bd69b05166ffb3592a2fcf4264f5247",
+				"dweb:/ipfs/QmbyFretkdnbcPkrMS8jKJXnATZ6qPRk56tccJ2uzkR38U"
+			]
+		},
+		"contracts/libraries/SafeMath.sol": {
+			"keccak256": "0x27f0ea82f879b3b01387b583e6d9d0ec858dca3b22b0aad173f8fbda06e761e1",
+			"urls": [
+				"bzz-raw://0db9cf37793eb7035f0bfced36323d240f0212150009c39a3a108701d9b50b6c",
+				"dweb:/ipfs/QmUAdiG9XNcieXkKfiMB49zQqD34FbXFE15csV2KQzwEqg"
+			]
+		}
+	},
+	"version": 1
+}

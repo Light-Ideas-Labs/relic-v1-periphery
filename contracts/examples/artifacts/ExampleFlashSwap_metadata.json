@@ -1,0 +1,157 @@
+{
+	"compiler": {
+		"version": "0.6.6+commit.6c089d02"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_factory",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "_factoryV1",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "router",
+						"type": "address"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "sender",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "amount0",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "amount1",
+						"type": "uint256"
+					},
+					{
+						"internalType": "bytes",
+						"name": "data",
+						"type": "bytes"
+					}
+				],
+				"name": "uniswapV2Call",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"stateMutability": "payable",
+				"type": "receive"
+			}
+		],
+		"devdoc": {
+			"methods": {}
+		},
+		"userdoc": {
+			"methods": {}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/examples/ExampleFlashSwap.sol": "ExampleFlashSwap"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": true,
+			"runs": 800
+		},
+		"remappings": []
+	},
+	"sources": {
+		"@uniswap/v2-core/contracts/interfaces/IUniswapV2Callee.sol": {
+			"keccak256": "0xdb17a1fb73e261e736ae8862be2d9a32964fc4b3741f48980f5cdc9d92b99a96",
+			"urls": [
+				"bzz-raw://468dab23a95d9d9b7d6ce74008d45eef3de2f137ede604e6be6c5e7d0121c5e9",
+				"dweb:/ipfs/QmcXwjTfp6tCRgf1KsNQyUAtrqKhiaN6fbaHVGr22eficP"
+			]
+		},
+		"@uniswap/v2-core/contracts/interfaces/IUniswapV2Pair.sol": {
+			"keccak256": "0x7c9bc70e5996c763e02ff38905282bc24fb242b0ef2519a003b36824fc524a4b",
+			"urls": [
+				"bzz-raw://85d5ad2dd23ee127f40907a12865a1e8cb5828814f6f2480285e1827dd72dedf",
+				"dweb:/ipfs/QmayKQWJgWmr46DqWseADyUanmqxh662hPNdAkdHRjiQQH"
+			]
+		},
+		"contracts/examples/ExampleFlashSwap.sol": {
+			"keccak256": "0xa3b2cc76b5cdeb1301481c84b591d884990e6f9a3e118202ba91cc244dbbe998",
+			"urls": [
+				"bzz-raw://3b3175ca15f8c73870c9a8db6a62593234a50629d5f9280f07b13d8a882144bf",
+				"dweb:/ipfs/QmVMKDH9VJWaiquDg3UqN6wU8hT3TFZpw1ZTbDgDv6GGfg"
+			]
+		},
+		"contracts/interfaces/IERC20.sol": {
+			"keccak256": "0x61db17aebc5d812c7002d15c1da954065e56abe49d64b14c034abe5604d70eb3",
+			"urls": [
+				"bzz-raw://b006685e753f9120469f10b09c159f222d4cb8b507a6c1f0c14ed50c883ebe66",
+				"dweb:/ipfs/QmSyY7iTugbczPwfGK67etiyPULenYGzzRYbt8aabwwkUb"
+			]
+		},
+		"contracts/interfaces/IRelicswapV1Router01.sol": {
+			"keccak256": "0xa94e223097a6634bfd5f1d597633e7ad49a4ad648103955ea31b61409819a379",
+			"urls": [
+				"bzz-raw://0f14125fc7dc941462b1af8296406e6c96fa038d372a55a7186afcc22fbc46e6",
+				"dweb:/ipfs/QmYvGYLfexpJsCyapXnsSnwsudvNHC3mKeGsgSTrcmDY9c"
+			]
+		},
+		"contracts/interfaces/IWETH.sol": {
+			"keccak256": "0xfc10758fd8dba790c39468dccd358cb7cef06ae7c4781832cc7aa76f91f167e6",
+			"urls": [
+				"bzz-raw://dc22493dea6c60d47835eeba53726f8a6f76f4fcd798d40e54608a1380515d49",
+				"dweb:/ipfs/QmS1QVcBRH4TELYNE7XCfjSVQEWFupyaNLKmMkKH7iPjrm"
+			]
+		},
+		"contracts/interfaces/V1/IRelicswapV1Exchange.sol": {
+			"keccak256": "0x85e9ab07bb104c76bb79a867b1789520628d88ad387bb107df8174ebfacc3435",
+			"urls": [
+				"bzz-raw://d974107158325f08f2eb3743e70a174f3dbb04420a2929883da57f49c514e568",
+				"dweb:/ipfs/Qmf4ijDfzaPdDy27N9Bnvbvpzo8ySggVvTAnAP5eb3HvaF"
+			]
+		},
+		"contracts/interfaces/V1/IRelicswapV1Factory.sol": {
+			"keccak256": "0x48c8dc48bde0f6a07b6a271231fff210d0e5abd2de2ff0901e28406fae3a3aba",
+			"urls": [
+				"bzz-raw://1d22f28c8c69cbddf392ecf47320fbacf8b205747f9a7cd2d71e66f32991187d",
+				"dweb:/ipfs/QmWjgfHhLtNwWzWwUEuJAN278pP6UZL4tbzTvGrGZnFwyY"
+			]
+		},
+		"contracts/libraries/RelicswapV1Library.sol": {
+			"keccak256": "0x0d8f2740d53779bd16c4e42bcb3721a2ab1f4234c6ca82f1dae7a016dec1a605",
+			"urls": [
+				"bzz-raw://fd14ee349c2e5c371d367c215a29153bb5b1ae671ae7251c9811db0336d32758",
+				"dweb:/ipfs/QmSXErJkk7XmZpCNc2LYvTHtM2xL7eSdkoPzaFjjBp22YA"
+			]
+		},
+		"contracts/libraries/SafeMath.sol": {
+			"keccak256": "0x27f0ea82f879b3b01387b583e6d9d0ec858dca3b22b0aad173f8fbda06e761e1",
+			"urls": [
+				"bzz-raw://0db9cf37793eb7035f0bfced36323d240f0212150009c39a3a108701d9b50b6c",
+				"dweb:/ipfs/QmUAdiG9XNcieXkKfiMB49zQqD34FbXFE15csV2KQzwEqg"
+			]
+		}
+	},
+	"version": 1
+}
